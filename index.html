@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--metadata-->
+    <meta charset="utf-8">
+    <meta name="description" content="User Input, with PHP">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Savyon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--for favicon on this page-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
+    <link rel="manifest" href="./fav_index/site.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!--Style on this page-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Prime Numbers</title>
+  </head>
+  <body>
+    <script src="./js/script.js"></script>
+
+    <h1>Prime Number Check</h1>
+    <h3>This program will check if the number entered is prime or not:</h3>
+    <table>
+      
+      <!--area for user to enter integer-->
+      <tr align="center">
+        <td valign="top" align="right">
+          <form action="javascript:checkPrime()">
+            <label for="userNum">Enter a positive integer:</label><br>
+            <input type="number" id="userNum" required><br><br>
+            <input type="submit" value="Check Prime">
+          </form>
+        </td>
+        
+        <td valign="top" align="left">
+          
+          <!--image on this page-->
+          <img src="./images/numbers.jpg" alt="Prime" width="20%">
+
+           <!--checkbox on this page --> 
+           <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+  <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+  <span class="mdl-checkbox__label">Check if number is prime!</span>
+</label>
+        </td>
+      </tr>
+    </table>
+
+  <!-- Create a space where the user information will be displayed -->
+    <br>
+    <div id="display-results"></div>
+
+    <!-- Video -->
+    <video src="./videos/PrimeVideo.mp4" width="480" height="360" controls></video>
+
+    <!-- GIF -->
+    <img src="./images/numbers.gif" alt="Prime" width="480" height="360">
+  </body>
+</html>
