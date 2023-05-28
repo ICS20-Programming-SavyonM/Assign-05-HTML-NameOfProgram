@@ -14,7 +14,7 @@ function checkPrime() {
   if (userNum < 2) {
     message = "The number " + userNum + " is not prime.";
   }
-  if (userNum === 2) {
+  if (userNum == 2) {
     message = "The number 2 is prime";
   }
 
@@ -40,13 +40,13 @@ function checkPrime() {
   // Generate numbers from 0 up to the entered number using a for loop for positive numbers
   let numbers = "";
   for (let num = 0; num <= userNum; num++) {
-    numbers += num
+    numbers += num + " ";
   }
 
-    // Generate numbers from 0 up to the entered number using a for loop for positive numbers
+  // Generate numbers from 0 up to the entered number using a for loop for positive numbers
   let negnumbers = "";
-  for (let num = 0; num <= userNum; num--) {
-    numbers += num
+  for (let num = 0; num >= userNum; num--) {
+    numbers += num + " ";
   }
 
   // Display the numbers and prime check result
