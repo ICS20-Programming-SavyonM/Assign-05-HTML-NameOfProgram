@@ -33,7 +33,7 @@ function checkPrime() {
   }
 
   // Result for prime number
-  if (counter === userNum) {
+  if (counter == userNum) {
     message = "The number " + userNum + " is a prime number.";
   }
 
@@ -43,9 +43,9 @@ function checkPrime() {
     numbers += num
   }
 
-  // Generate numbers from 0 up to the entered number using a for loop for positive numbers
+    // Generate numbers from 0 up to the entered number using a for loop for positive numbers
   let negnumbers = "";
-  for (let num = 0; num >= userNum; num--) {
+  for (let num = 0; num <= userNum; num--) {
     numbers += num
   }
 
